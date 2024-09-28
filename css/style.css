@@ -91,6 +91,7 @@ ul {
     cursor: pointer;
     width: 40px;
     height: auto;
+    z-index: 15;
   }
 .top-bar {
   display: none;
@@ -115,30 +116,33 @@ ul {
     .sidenav a {
       font-size: 18px;
     }
-    .svg-img {
-      top: 1.5rem;
-      right: 1.5rem;
-      width: 30px;
-    }
-    .button {
-      font-size: 1rem;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #21939b;
-      padding: 0.4rem;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-    }
-    .top-bar .title {
-      font-size: 1.2rem;
-      color: #FFFFFF;
-    }
+}
+@media (max-width: 800px)  {
+  .svg-img {
+    top: 0.45rem;
+    left: auto;
+    right: 0.1rem;
+    width: 25px;
+  }
+  .button {
+    font-size: 1rem;
+  }
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #21939b;
+    padding: 0.4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .top-bar .title {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+  }
 }
 @media (min-width: 1024px) {
     body {
@@ -151,11 +155,18 @@ ul {
       font-size: 2rem;
     }
     .svg-img {
-      width: 40px; 
-      top: 2rem;
+      width: 37px; 
+      top: 2.5rem;
       left: 3.5rem;
     }
     .button {
       font-size: 1.6rem;
     }
+}
+@media (min-width: 1700px) {
+  .svg-img {
+    width: 45px; 
+    top: 2.5rem;
+    left: 3.5rem;
+  }
 }
