@@ -1,82 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Viga">
-    <style>
-      body {
-        background-color: #A1D3E1;
-        font-family: "Viga", sans-serif;
-        font-size: 2rem; 
-        color: white;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-      h1 {
-        font-size: 3rem; 
-        margin: 1rem;
-      }
-      p {
-        color: #FFFFFF;
-        font-family: "Viga", serif;
-        font-size: 2rem;
-        margin: 1rem;
-      }
-      img {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 100%;
-        height: auto;
-      }
-       a:link {
-        color: #FFFFFF;
-      }
+    <title>Molchdiener</title>
+    <script src="scripts.js">
 
-      a:visited {
-        color: #CFFBFD;
-      }
-
-      a:hover {
-        color: #6C989A;
-      }
-
-      a:active {
-        color: #A8E8E8;
-      }
-
-
-
-      @media (max-width: 600px) {
-        body {
-          font-size: 1.5rem; 
-        }
-        h1 {
-          font-size: 2rem; 
-        }
-        p {
-          font-size: 1.2rem; 
-        }
-      }
-
-      @media (min-width: 1024px) {
-        body {
-          font-size: 2.5rem;
-        }
-        h1 {
-          font-size: 4rem; 
-        }
-        p {
-          font-size: 2rem;
-        }
-      }
-    </style>
+    </script>
   </head>  
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
     <h1>Willkommen beim Molch!</h1>
     <p>Wie schön dich hier zu sehen!</p>
     <p><a href="fisch.html">  Hier geht es zum Fisch!</a></p>
-    <img src="molch.png" alt="Molch">
+    <span onclick="openNav()">
+      <object data="picture/menu.svg" type="image/svg+xml">
+        <img src="picture/menu.svg" />
+      </object>
+    </span>
+    <img src="picture/molch.png" alt="Molch">
+    <button class="button">Molch</button>
   </body>
 </html>
