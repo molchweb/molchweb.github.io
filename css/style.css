@@ -65,7 +65,7 @@ ul {
    display: block;
    transition: 0.3s;
   }
-.sidenav .closebtn {
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -85,10 +85,11 @@ ul {
   }
 .svg-img {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50);
     cursor: pointer;
-    width: 3rem;
+    width: 50px;
     height: auto;
   }
 #main {
