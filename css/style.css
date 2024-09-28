@@ -87,7 +87,7 @@ ul {
 .svg-img {
     position: absolute;
     top: 2rem;
-    right: 3.5rem;
+    left: 3.5rem;
     cursor: pointer;
     width: 40px;
     height: auto;
@@ -117,7 +117,7 @@ ul {
     }
     .svg-img {
       top: 1.5rem;
-      left: 2.625rem;
+      right: 1.5rem;
       width: 30px;
     }
     .button {
@@ -128,7 +128,7 @@ ul {
       align-items: center;
       justify-content: space-between;
       background-color: #21939b;
-      padding: 0.001rem;
+      padding: 0.4rem;
       position: fixed;
       top: 0;
       left: 0;
@@ -136,7 +136,7 @@ ul {
       z-index: 10;
     }
     .top-bar .title {
-      font-size: 1.5;
+      font-size: 1.2rem;
       color: #FFFFFF;
     }
 }
@@ -153,7 +153,7 @@ ul {
     .svg-img {
       width: 40px; 
       top: 2rem;
-      right: 3.5rem;
+      left: 3.5rem;
     }
     .button {
       font-size: 1.6rem;
