@@ -83,6 +83,14 @@ ul {
     font-size: 16px;
     border-radius: 1.5rem;
   }
+.svg-img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    width: 3rem;
+    height: auto;
+  }
 #main {
    transition: margin-left .5s;
    padding: 20px;
@@ -97,8 +105,17 @@ ul {
     p {
       font-size: 1.2rem; 
     }
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+    .svg-img {
+      top: 1rem;
+      left: 1rem;
+      width: 3rem;
+    }
   }
 @media (min-width: 1024px) {
     body {
@@ -109,5 +126,10 @@ ul {
     }
     p {
       font-size: 2rem;
+    }
+    .svg-img {
+      top: 2rem;
+      left: 5rem;
+      width: 4rem; 
     }
   }
