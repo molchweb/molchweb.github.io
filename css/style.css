@@ -148,6 +148,18 @@ ul {
     font-size: 1.2rem;
     color: #FFFFFF;
   }
+    .sidenav {
+   height: 100%;
+   width: 100%; 
+   position: fixed; 
+   z-index: 1; 
+   top: 0; 
+   left: 0;
+   background-color: #21939b; 
+   overflow-x: hidden; 
+   padding-top: 60px; 
+   transition: 0.5s; 
+  }
 }
 @media (min-width: 1024px) {
     body {
