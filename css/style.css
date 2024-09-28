@@ -85,9 +85,8 @@ ul {
   }
 .svg-img {
     position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50);
+    top: 2rem;
+    left: 2rem;
     cursor: pointer;
     width: 50px;
     height: auto;
@@ -113,9 +112,9 @@ ul {
       font-size: 18px;
     }
     .svg-img {
-      top: 1rem;
-      left: 1rem;
-      width: 3rem;
+      top: 1.5rem;
+      left: 1.5rem;
+      width: 50px;
     }
   }
 @media (min-width: 1024px) {
@@ -129,8 +128,8 @@ ul {
       font-size: 2rem;
     }
     .svg-img {
+      width: 50px; 
       top: 2rem;
-      left: 5rem;
-      width: 4rem; 
+    left: 2rem;
     }
   }
