@@ -52,7 +52,7 @@ ul {
    z-index: 1; 
    top: 0; 
    left: 0;
-   background-color: #5cd2f3; 
+   background-color: #21939b; 
    overflow-x: hidden; 
    padding-top: 60px; 
    transition: 0.5s; 
@@ -80,18 +80,21 @@ ul {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 1.5rem;
+    border-radius: 1.3rem;
     font-family: "Viga", serif;
     font-size: 2;
   }
 .svg-img {
     position: absolute;
     top: 2rem;
-    left: 3.5rem;
+    right: 3.5rem;
     cursor: pointer;
     width: 40px;
     height: auto;
   }
+.top-bar {
+  display: none;
+}
 #main {
    transition: margin-left .5s;
    padding: 20px;
@@ -118,9 +121,25 @@ ul {
       width: 30px;
     }
     .button {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
-  }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #21939b;
+      padding: 0.001rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+    .top-bar .title {
+      font-size: 1.5;
+      color: #FFFFFF;
+    }
+}
 @media (min-width: 1024px) {
     body {
       font-size: 2.5rem;
@@ -134,9 +153,9 @@ ul {
     .svg-img {
       width: 40px; 
       top: 2rem;
-      left: 3.5rem;
+      right: 3.5rem;
     }
     .button {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
-  }
+}
