@@ -9,7 +9,12 @@ function toggleNav() {
     }
 }
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    var sidenav = document.getElementById("mySidenav");
+    if (window.innerWidth <= 850) {
+        sidenav.style.width = "100%";
+    } else {
+        sidenav.style.width = "250px";
+    }
     menuButton.classList.add("hidden");
   }
   function closeNav() {
