@@ -49,7 +49,7 @@ ul {
    height: 100%;
    width: 0; 
    position: fixed; 
-   z-index: 1; 
+   z-index: 15; 
    top: 0; 
    left: 0;
    background-color: #21939b; 
@@ -92,7 +92,7 @@ ul {
     cursor: pointer;
     width: 40px;
     height: auto;
-    z-index: 15;
+    z-index: 10;
     opacity: 1;
   }
 .hidden {
@@ -101,6 +101,7 @@ ul {
     pointer-events: none;
   }
 .top-bar {
+  z-index: 20;
   display: none;
 }
 #main {
@@ -123,13 +124,20 @@ ul {
     .sidenav a {
       font-size: 18px;
     }
+    .top-bar {
+      padding: 0.2rem;
+    }
+    .top-bar .title {
+      font-size: 1rem;
+    }
 }
-@media (max-width: 800px)  {
+@media (max-width: 850px)  {
   .svg-img {
     top: 0.45rem;
     left: auto;
     right: 0.1rem;
     width: 25px;
+    z-index: 25;
   }
   .button {
     font-size: 1rem;
@@ -159,11 +167,11 @@ ul {
    left: 0;
    background-color: #21939b; 
    overflow-x: hidden; 
-   padding-top: 6rem; 
+   padding-top: 4rem; 
    transition: 0.5s; 
   }
   h1 {
-    margin: 3.3rem 0 1rem 0;
+    margin: 4rem 0 1rem 0;
   }
   a:link a:active a:hover a:visited {
     font-size: 7rem;
@@ -184,6 +192,8 @@ ul {
       width: 37px; 
       top: 2.5rem;
       left: 3.5rem;
+      opacity: 1;
+      transition: ocapacity 0.5s ease;
     }
     .button {
       font-size: 1.6rem;

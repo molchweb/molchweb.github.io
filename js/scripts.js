@@ -16,7 +16,6 @@ function openNav() {
         menuButton.src = "picture/close.svg";
     } else {
         sidenav.style.width = "250px";
-        menuButton.classList.add("hidden");
     }
 }
   function closeNav() {  
@@ -29,7 +28,6 @@ function openNav() {
     } else {
         sidenav.style.width = "0";
         setTimeout (() => {
-            menuButton.classList.remove("hidden");
         }, 300);
     }
   }
