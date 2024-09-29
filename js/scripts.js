@@ -1,27 +1,35 @@
-function toggleNav() {
-    const sidenav = document.getElementById("mySidenav")
-    const menuButton = document.getElementById("menuButton")
+let isNavOpen = false;
 
-    if (sidenav.style.width >="100px") {
+function toggleNav() {
+    if (isNavOpen) {
         closeNav();
     } else {
         openNav();
     }
 }
 function openNav() {
-    var sidenav = document.getElementById("mySidenav");
+    const sidenav = document.getElementById("mySidenav")
+    const menuButton = document.getElementById("menuButton")
+    isNavOpen = true;
     if (window.innerWidth <= 850) {
         sidenav.style.width = "100%";
+        menuButton.src = "picture/close.svg";
     } else {
         sidenav.style.width = "250px";
+        menuButton.classList.add("hidden");
     }
-    menuButton.src = "picture/close.svg"
-    //menuButton.classList.add("hidden");
-  }
-  function closeNav() {
-    sidenav.style.width = "0";
-    setTimeout(() => {
-        const menuButton = document.getElementById("menuButton")
-        menuButton.classList.remove("hidden");
-    }, 300);
+}
+  function closeNav() {  
+    const sidenav = document.getElementById("mySidenav")
+    const menuButton = document.getElementById("menuButton")
+    isNavOpen = false;
+    if (window.innerWidth <= 850) {
+        sidenav.style.width = "0";
+        menuButton.src = "picture/menu.svg";
+    } else {
+        sidenav.style.width = "0";
+        setTimeout (() => {
+            menuButton.classList.remove("hidden");
+        }, 300);
+    }
   }
