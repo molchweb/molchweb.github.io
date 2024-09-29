@@ -172,11 +172,15 @@ ul {
   }
   h1 {
     margin: 4rem 0 1rem 0;
+    overflow-wrap: break-word;
+    max-width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   a:link a:active a:hover a:visited {
     font-size: 7rem;
   }
-
 }
 @media (min-width: 1024px) {
     body {
