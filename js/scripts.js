@@ -15,7 +15,8 @@ function openNav() {
     } else {
         sidenav.style.width = "250px";
     }
-    menuButton.classList.add("hidden");
+    menuButton.innerHTML = "&times;";
+    //menuButton.classList.add("hidden");
   }
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
