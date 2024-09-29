@@ -15,11 +15,11 @@ function openNav() {
     } else {
         sidenav.style.width = "250px";
     }
-    menuButton.innerHTML = "&times;";
+    menuButton.src = "picture/close.svg"
     //menuButton.classList.add("hidden");
   }
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    sidenav.style.width = "0";
     setTimeout(() => {
         const menuButton = document.getElementById("menuButton")
         menuButton.classList.remove("hidden");
