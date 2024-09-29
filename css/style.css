@@ -71,7 +71,7 @@ ul {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+    }
 .button {
     background-color: #21939b; /* Green */
     border: none;
@@ -189,6 +189,9 @@ ul {
     color: white;
     font-size: 3rem;
   } 
+  .closebtn {
+    display: none;
+  }
 }
 @media (min-width: 1024px) {
     body {
