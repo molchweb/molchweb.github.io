@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    align-items: center;
   }
 h1 {
     font-size: 3rem; 
@@ -17,14 +18,6 @@ p {
     font-size: 2rem;
     margin: 1rem;
   }
-img {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 100%;
-    height: auto;
-  }
 a:link {
     color: #FFFFFF;
   }
@@ -34,7 +27,7 @@ a:visited {
   }
 
 a:hover {
-    color: #6C989A;
+    color: #abe2f1;
   }
 
 a:active {
@@ -45,6 +38,15 @@ ul {
    margin: 0;
     padding: 0;
   }
+.newt {
+    position: relative;
+    max-width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
 .sidenav {
    height: 100%;
    width: 0; 
@@ -89,7 +91,7 @@ ul {
   }
 .svg-img {
     transition: ocapacity 0.3s ease;
-    position: absolute;
+    position: fixed;
     top: 2rem;
     left: 3.5rem;
     cursor: pointer;
@@ -101,10 +103,22 @@ ul {
   z-index: 20;
   display: none;
 }
+.padding {
+  padding: 0 clamp(20px, 5%, 100px);
+}
 #main {
    transition: margin-left .5s;
    padding: 20px;
   }
+@media (min-height: 751px) {
+    .newt {
+      position: fixed; 
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+    }
+}
 @media (max-width: 600px) {
     body {
       font-size: 1.5rem; 

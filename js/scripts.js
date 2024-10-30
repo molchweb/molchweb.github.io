@@ -14,7 +14,7 @@ function openNav() {
     isNavOpen = true;
     if (window.innerWidth <= 850) {
         sidenav.style.width = "100%";
-        menuButton.src = "picture/close.svg";
+        menuButton.src = "https://molchweb.github.io/picture/close.svg";
         closeButton.style.display = "none";
     } else {
         sidenav.style.width = "250px";
@@ -28,7 +28,7 @@ function openNav() {
     isNavOpen = false;
     if (window.innerWidth <= 850) {
         sidenav.style.width = "0";
-        menuButton.src = "picture/menu.svg";
+        menuButton.src = "https://molchweb.github.io/picture/menu.svg";
     } else {
         sidenav.style.width = "0";
         setTimeout (() => {
